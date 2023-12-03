@@ -8,13 +8,14 @@ let quotations = { }
 const update = async () => {
   const response = await api.get(`/finance/quotations?format=json&key=${apiKey}`)
   quotations = response.data.results.currencies
-}
+  quotations["BRL"] = { buy: 1.0 }
+} 
 
 const getQuotation = currency => {
   return quotations[currency.toUpperCase()]?.buy ?? null
 }
 
-setInterval(update, 10000);
+setInterval(update, 60000);
 update()
 
 module.exports = {
