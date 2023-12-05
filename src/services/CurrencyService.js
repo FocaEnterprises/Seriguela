@@ -15,9 +15,7 @@ const getQuotation = currency => {
   return quotations[currency.toUpperCase()]?.buy ?? null
 }
 
-setInterval(update, 60000);
-update()
-
 module.exports = {
-  getQuotation 
+  getQuotation,
+  update
 }
