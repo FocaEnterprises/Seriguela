@@ -16,8 +16,8 @@ Exemplo de esposta:
 ```json
 {
   "exchangeRate": "4.93",
-	"fromCurrency": "USD",
-	"toCurrency": "BRL"
+  "fromCurrency": "USD",
+  "toCurrency": "BRL"
 }
 ```
 
