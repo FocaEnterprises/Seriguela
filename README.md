@@ -15,7 +15,9 @@ Retorna a cotação atual da moeda fornecida, ou uma mensagem de erro caso não 
 Exemplo de esposta:
 ```json
 {
-  "exchangeRate": "4.93"
+  "exchangeRate": "4.93",
+	"fromCurrency": "USD",
+	"toCurrency": "BRL"
 }
 ```
 

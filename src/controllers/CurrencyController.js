@@ -1,13 +1,19 @@
 const { getQuotation } = require("../services/CurrencyService")
 
 const quotation = async (req, res) => {
-  const quotationValue = getQuotation(req.params.currency)
+  const { currency } = req.params
+
+  const quotationValue = getQuotation(currency)
 
   if(!quotationValue) {
     return res.status(404).json({ error: "Unknown currency" })
   }
 
-  res.status(200).json({ exchangeRate: quotationValue.toFixed(2) })
+  res.status(200).json({ 
+    exchangeRate: quotationValue.toFixed(2),
+    fromCurrency: currency.toUpperCase(),
+    toCurrency: "BRL"
+  })
 }
 
 const exchangeFromBRL = async (req, res) => {
