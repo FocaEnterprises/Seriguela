@@ -31,11 +31,11 @@ Retorna a conversão do valor na moeda especificada (em relação ao Real).
 Exemplo de resposta:
 ```json
 {
-	"fromCurrency": "BRL",
-	"toCurrency": "USD",
-	"fromValue": "10.00",
-	"exchangeRate": "4.93",
-	"exchangedValue": "49.29"
+  "fromCurrency": "BRL",
+  "toCurrency": "USD",
+  "fromValue": "10.00",
+  "exchangeRate": "4.93",
+  "exchangedValue": "49.29"
 }
 ```
 
@@ -48,10 +48,10 @@ Retorna a conversão do valor da moeda de origem para a moeda de destino.
 Exemplo de resposta:
 ```json
 {
-	"fromCurrency": "BRL",
-	"toCurrency": "USD",
-	"fromValue": "15.00",
-	"exchangeRate": "0.20",
-	"exchangedValue": "3.04"
+  "fromCurrency": "BRL",
+  "toCurrency": "USD",
+  "fromValue": "15.00",
+  "exchangeRate": "0.20",
+  "exchangedValue": "3.04"
 }
 ```
