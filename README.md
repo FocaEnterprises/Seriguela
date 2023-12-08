@@ -4,7 +4,17 @@
 
 ## Que isso?
 
-Seriguela é uma mini API para conversão de moedas (não leva a taxa de câmbio em consideração).
+Seriguela é uma mini API para conversão de moedas (não leva a taxa de câmbio em consideração). O projeto utiliza a API da [HG Brasil](https://hgbrasil.com/), é necessário configurar o URL e a Key desta API nas variáveis de ambiente.
+
+## Executando
+
+```bash
+# Instalar dependências
+npm install
+
+# Executar
+node .
+```
 
 ## Rotas
 
